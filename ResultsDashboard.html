@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Results Dashboard
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="ResultsDashboard.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="header">
+                <h3>Your Result</h3>
+            </div>
+            <div class="circle">
+                <div class="rate">
+                    <span id="totalScore">0</span>
+                </div>
+                <div class="percent">
+                    <span id="percentage">%</span>
+                </div>
+            </div>
+            <div class="subhead">
+                <span id="resultText"></span>
+            </div>
+            <div class="para">
+                Your detailed results will be displayed here.
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="Summary">
+                <h2>Summary</h2>
+            </div>
+            <div class="Reaction">
+                <span><i class="fa-solid fa-section"></i></span>
+                <span>Reaction</span>
+                <span>
+                    <input type="number" id="reactionScore" min="0" max="100" required>
+                </span>
+            </div>
+            <div class="Memory">
+                <span>
+                    <i class="fas fa-brain"></i>
+                </span>
+                <span>Memory</span>
+                <span>
+                    <input type="number" id="memoryScore" min="0" max="100" required>
+                </span>
+            </div>
+            <div class="Verbal">
+                <span>
+                    <i class="fas fa-comment"></i>
+                </span>
+                <span>Verbal</span>
+                <span>
+                    <input type="number" id="verbalScore" min="0" max="100" required>
+                </span>
+            </div>
+            <div class="Visual">
+                <span>
+                    <i class="fas fa-eye"></i>
+                </span>
+                <span>Visual</span>
+                <span>
+                    <input type="number" id="visualScore" min="0" max="100" required>
+                </span>
+            </div>
+            <div class="btn">
+                <button id="calculateButton">
+                    Continue
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
